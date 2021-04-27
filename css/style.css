@@ -1,0 +1,122 @@
+html {
+   box-sizing: border-box;
+ }
+ 
+ *,
+ *::after,
+ *::before {
+   box-sizing: inherit;
+ }
+ 
+ body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 20px;
+   color: #222222;
+ }
+
+ /*img {
+   width: 100%;
+   height: auto;
+ }*/
+
+.container {
+   max-width: 1160px;
+   margin: 0 auto;
+   padding: 0 25px;
+}
+/* HEADER */
+.header {
+   min-height: 100vh;
+   background: url("/img/vegitable.png"), url("/img/icons.png") #F0F5FB; 
+   background-repeat: no-repeat;
+   background-position-y: 100px;
+}
+
+.header-top {
+   display: flex;
+   align-items: center;
+   padding-top: 25px;
+}
+
+/* NAVBAR */
+.nav__list {
+   display: flex;
+   padding: 0;
+}
+
+.nav__items {
+   margin-right: 40px;
+   list-style: none;
+}
+
+.nav__link {
+   text-decoration: none;
+   color: #222222;
+   transition: color .3s ease;
+}
+
+.nav__link:hover,
+.phone-number:hover {
+   color:#FE5626;
+}
+
+/* LOGO */
+.logo {
+   margin: 0 auto;
+   display: flex;
+}
+
+.logo:active {
+   opacity: 0.8;
+}
+/* DAILY */
+.daily {
+   position: relative;
+   margin-right: 90px;
+}
+
+.daily::before {
+   position: absolute;
+   content: ".";
+   font-size: 40px;
+   color: #46CB72;
+   left: -14px;
+   top: -12px;
+}
+
+/* PHONE NUMBER */
+
+.phone-number {
+   position: relative;
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 22px;
+   text-decoration: none;
+   color: #222222;
+   transition: color .3s ease;
+}
+
+.phone-number::before {
+   position: absolute;
+   content: "";
+   width: 33px;
+   height: 33px;
+   left: -45px;
+   bottom: -6px;
+   border-radius: 50%;
+   background: url(/img/phone.png), linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%);
+   background-repeat: no-repeat;
+   background-position: center center;
+   box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
+}
+
+.nav,
+.daily,
+.phone-number {
+   top: 10px;
+}
+
