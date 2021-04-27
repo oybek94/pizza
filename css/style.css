@@ -18,11 +18,6 @@ html {
    color: #222222;
  }
 
- /*img {
-   width: 100%;
-   height: auto;
- }*/
-
 .container {
    max-width: 1160px;
    margin: 0 auto;
@@ -30,16 +25,21 @@ html {
 }
 /* HEADER */
 .header {
-   min-height: 100vh;
-   background: url("/img/vegitable.png"), url("/img/icons.png") #F0F5FB; 
+   padding-top: 25px;
+   padding-bottom: 380px;
+   background-image: 
+   url("/img/vegitable.png"),
+   url("/img/icons.png");
    background-repeat: no-repeat;
-   background-position-y: 100px;
+   background-size: contain;
+   background-position: center;
+   background-color: #F0F5FB;
 }
 
 .header-top {
    display: flex;
    align-items: center;
-   padding-top: 25px;
+   margin-bottom: 105px;
 }
 
 /* NAVBAR */
@@ -67,6 +67,7 @@ html {
 /* LOGO */
 .logo {
    margin: 0 auto;
+   padding-right: 25px;
    display: flex;
 }
 
@@ -75,7 +76,6 @@ html {
 }
 /* DAILY */
 .daily {
-   position: relative;
    margin-right: 90px;
 }
 
@@ -91,7 +91,6 @@ html {
 /* PHONE NUMBER */
 
 .phone-number {
-   position: relative;
    font-weight: bold;
    font-size: 18px;
    line-height: 22px;
@@ -117,6 +116,66 @@ html {
 .nav,
 .daily,
 .phone-number {
+   position: relative;
    top: 10px;
+   white-space: nowrap;
 }
 
+/* HEADER TEXTS */
+
+.header-text {
+   width: 620px;
+   margin: 0 auto;
+   margin-bottom: 120px;
+   text-align: center;
+}
+
+/* STOCKS */
+
+.stock {
+   position: relative;
+   float: right;
+   width: 200px;
+   text-align: right;
+   padding-bottom: 343px;
+}
+
+.special {
+   position: relative;
+   font-weight: bold;
+   color:#F87848;
+}
+
+.stock::before {
+   position: absolute;
+   content: "";
+   left: -180px;
+   top: 20px;
+   background-image: url("/img/line.svg");
+   width: 141px;
+   height: 41px;
+}
+
+.stock::after {
+   content: "+";
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   left: -220px;
+   top: 60px;
+   width: 33px;
+   height: 33px;
+   font-size: 16px;
+   color: #FE5626;
+   background-color: #fff;
+   background-position: center center;
+   box-shadow: 0px 4px 8px rgba(205, 169, 41, 1);
+   border-radius: 50%;
+}
+
+.pizza {
+   position: absolute;
+   left: calc(50% - 370px);
+   top: 250px;
+}
