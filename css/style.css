@@ -19,7 +19,7 @@ html {
  }
 
 .container {
-   max-width: 1160px;
+   max-width: 1410px;
    margin: 0 auto;
    padding: 0 25px;
 }
@@ -180,6 +180,7 @@ html {
    top: 250px;
 }
 
+/* SHOPPING BAG */
 .shopping-bag {
    position: relative;
    width: 50px;
@@ -221,4 +222,155 @@ html {
    border-top: 10px solid transparent;
    border-left: 10px solid #222;
    border-bottom: 10px solid transparent;
+}
+
+/* PRODUCTS */
+
+.section-title {
+   margin-bottom: 49px;
+   font-weight: bold;
+   font-size: 48px;
+   line-height: 59px;
+   text-align: center;
+}
+
+.product-categories {
+   display: flex;
+   justify-content: center;
+   list-style: none;
+   padding: 0;
+   margin-bottom: 50px;
+}
+
+.category-item {
+   margin-right: 30px;
+}
+
+.active {
+   background: #59AAF1!important;
+   color: #fff!important;
+}
+
+.category-link {
+   padding: 16px 32px;
+   background: linear-gradient(0deg, #ECEEF6, #ECEEF6), #59AAF1;
+   border-radius: 45px; 
+   text-decoration: none;
+   color: #222;
+}
+
+/* PRODUCTS */
+
+.products {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 0;
+}
+
+.product__link {
+   text-decoration: none;
+   color: #222;
+}
+
+.product {
+   display: flex;
+   position: relative;
+   flex-direction: column;
+   width: 310px;
+   margin-bottom: 45px;
+   padding: 36px 25px 45px 25px;
+   border: 2px solid #ECEEF7;
+   border-radius: 5%;
+   list-style: none;
+}
+
+.product::after {
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   content: "";
+   border-radius: 0 0 25px 0;
+   border-right: 2px solid #eceef7;
+   border-bottom: 2px solid #eceef7;
+   background-color: #FFF;
+   transform: rotate(45deg);
+   bottom: -27px;
+   left: 128px;
+   top: 463px;
+   z-index: 1;
+}
+ 
+.product__photo {
+   display: block;
+   margin: 0 auto;
+   margin-bottom: 30px;
+}
+
+.product-info {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 50px;
+   margin-bottom: 10px;
+}
+
+.product__name {
+   margin: 0;
+   margin-right: 10px;
+   font-weight: 600;
+}
+
+.product__size, 
+.product__ingredients {
+   font-size: 12px;
+}
+
+.product__size {
+   margin: 0;
+}
+
+.product__ingredients {
+   margin: 0;
+   margin-bottom: 20px;
+}
+
+.product__price {
+   display: block;
+   font-weight: 300;
+   font-size: 24px;
+   text-align: center;
+   color: #121146;
+   margin-bottom: 40px;
+}
+
+.product__button {
+   align-self: center;
+   padding: 16px 16px;
+   margin-bottom: -64px;
+   border: 2px solid #eceef6;
+   border-radius: 50%;
+   background-color: #fff;
+   background: url(/img/shop-bag.svg) no-repeat center 9px;
+   z-index: 2;
+}
+
+.product__button:hover,
+.selected {
+   border-color: transparent;
+   box-shadow: 0px 4px 8px rgba(205, 71, 41, 0.26);
+   background: url(/img/shop-bag-white.svg) no-repeat center 9px, linear-gradient(
+   287.74deg, #F58656 8.52%, #FE5626 92.72%), linear-gradient(
+   180deg, #FE5626 0%, #F23F0E 100%), #59AAF1;
+}
+
+.xit {
+   position: absolute;
+   padding: 4px 20px;
+   top: 15px;
+   left: 18px;
+   color: #fff;
+   background: linear-gradient(116.88deg, #FE3326 -4.28%, #F26E0E 112.69%), #59AAF1;
+   box-shadow: 0px 4px 8px rgba(205, 71, 41, 0.26);
+   border-radius: 3px;
 }
