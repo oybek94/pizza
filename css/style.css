@@ -26,7 +26,6 @@ html {
 /* HEADER */
 .header {
    padding-top: 25px;
-   padding-bottom: 380px;
    background-image: 
    url("/img/vegitable.png"),
    url("/img/icons.png");
@@ -134,8 +133,9 @@ html {
 
 .stock {
    position: relative;
-   float: right;
    width: 200px;
+   left: calc(50% + 340px);
+   top: 56px;
    text-align: right;
    padding-bottom: 343px;
 }
@@ -156,38 +156,33 @@ html {
    height: 41px;
 }
 
-.stock::after {
-   content: "+";
-   position: absolute;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   left: -220px;
-   top: 60px;
+.add-button {
+   position: relative;
    width: 33px;
    height: 33px;
-   font-size: 16px;
-   color: #FE5626;
-   background-color: #fff;
-   background-position: center center;
-   box-shadow: 0px 4px 8px rgba(205, 169, 41, 1);
+   left: 800px;
+   bottom: 280px;
+   border: none;
    border-radius: 50%;
+   background-color: #fff;
+   background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%);
+   box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
+   z-index: 5;
 }
 
 .pizza {
    position: absolute;
    left: calc(50% - 370px);
-   top: 250px;
+   top: 310px;
 }
 
 /* SHOPPING BAG */
 .shopping-bag {
    position: relative;
-   width: 50px;
-   height: 50px;
-   margin-left: auto;
-   margin-right: 100px;
+   width: 70px;
+   height: 70px;
    margin-top: 80px;
+   left: calc(50% + 700px);
    border-radius: 50%;
    background-color: rgb(255, 255, 255);
    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -201,7 +196,7 @@ html {
    width: 25px;
    height: 25px;
    bottom: -10px;
-   right: 20px;
+   right: 0;
    text-align: center;
    font-weight: 600;
    color: #fff;
@@ -217,8 +212,8 @@ html {
    float: right;
    width: 70px;
    height: 30px;
-   top: -40px;
-   right: 167px;
+   top: -50px;
+   right: 270px;
    border-radius: 3px;
    background-color: #222;
    color: #fff;
@@ -272,7 +267,7 @@ html {
 
 .category-link {
    padding: 16px 32px;
-   background: linear-gradient(0deg, #ECEEF6, #ECEEF6), #59AAF1;
+   background: #ECEEF6;
    border-radius: 45px; 
    text-decoration: none;
    color: #222;
