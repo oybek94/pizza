@@ -184,6 +184,7 @@ html {
    margin-top: 80px;
    left: calc(50% + 700px);
    border-radius: 50%;
+   border: none;
    background-color: rgb(255, 255, 255);
    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
    background: url("/img/shopping-bag.svg") no-repeat center center;
@@ -209,11 +210,10 @@ html {
    position: relative;
    justify-content: center;
    align-items: center;
-   float: right;
+   top: -50px;
+   left: calc(50% + 610px);
    width: 70px;
    height: 30px;
-   top: -50px;
-   right: 270px;
    border-radius: 3px;
    background-color: #222;
    color: #fff;
@@ -321,6 +321,7 @@ html {
    display: block;
    margin: 0 auto;
    margin-bottom: 30px;
+   filter: drop-shadow(20px 10px 20px #8f5b205d);
 }
 
 .product-info {
