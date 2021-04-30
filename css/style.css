@@ -87,6 +87,9 @@ html {
    top: -12px;
 }
 
+.daily:hover {
+   color: #46CB72;
+}
 /* PHONE NUMBER */
 
 .phone-number {
@@ -372,7 +375,7 @@ html {
    z-index: 2;
 }
 
-.product__button:hover,
+.product:hover .product__button,
 .selected {
    border-color: transparent;
    box-shadow: 0px 4px 8px rgba(205, 71, 41, 0.26);
