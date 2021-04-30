@@ -76,6 +76,7 @@ html {
 /* DAILY */
 .daily {
    margin-right: 90px;
+   transition: color 0.3s ease;
 }
 
 .daily::before {
@@ -90,6 +91,7 @@ html {
 .daily:hover {
    color: #46CB72;
 }
+
 /* PHONE NUMBER */
 
 .phone-number {
@@ -171,6 +173,7 @@ html {
    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%);
    box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
    z-index: 5;
+   color: #F87848;
 }
 
 .pizza {
@@ -406,3 +409,34 @@ html {
    box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
    margin-bottom: 100px;
 }
+
+/* GALLERY */
+
+.gallery {
+}
+
+.gallery__item {
+   background: url("/img/photos.png") cover no-repeat;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   width: 480px;
+   height: 180px;
+   padding: 20px;
+   text-align: center;
+   background: linear-gradient(45.04deg, #FD9924 -51.05%, #F65B16 134.89%);
+   box-shadow: 0px 70px 90px rgba(253, 55, 36, 0.2), 0px 35px 50px rgba(253, 55, 36, 0.2), 0px 20px 25px rgba(253, 55, 36, 0.2);
+   border-radius: 15px;
+
+}
+.gallery__link {
+   padding: 55px;
+   border: 2px solid rgba(255, 255, 255, 0.1);
+   border-radius: 15px;
+   font-size: 24px;
+   line-height: 29px;
+   text-align: center;
+   color: #FFFFFF;
+   text-decoration: none;
+   }
