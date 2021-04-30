@@ -188,7 +188,7 @@ html {
    width: 70px;
    height: 70px;
    margin-top: 80px;
-   left: calc(50% + 700px);
+   left: calc(50% + 620px);
    border-radius: 50%;
    border: none;
    background-color: rgb(255, 255, 255);
@@ -217,7 +217,7 @@ html {
    justify-content: center;
    align-items: center;
    top: -50px;
-   left: calc(50% + 610px);
+   left: calc(50% + 530px);
    width: 70px;
    height: 30px;
    border-radius: 3px;
@@ -266,7 +266,8 @@ html {
    margin-right: 30px;
 }
 
-.active {
+.active,
+.category-link:hover {
    background: #59AAF1!important;
    color: #fff!important;
 }
@@ -277,6 +278,8 @@ html {
    border-radius: 45px; 
    text-decoration: none;
    color: #222;
+   transition: color .2s ease;
+   transition: background-color .3s ease;
 }
 
 /* PRODUCTS */
